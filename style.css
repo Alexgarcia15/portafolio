@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #1e293b;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.proyectos {
+  padding: 2rem;
+}
+
+.card {
+  background: #1e293b;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #334155;
+}
+
+.contacto {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #020617;
+}
