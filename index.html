@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mi Portafolio</title>
 
-  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header class="hero">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>MiPortafolio</h2>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
     <h1>Hola, soy Hector 👋</h1>
     <p>Desarrollador Web en formación</p>
 
@@ -20,13 +33,15 @@
     </div>
   </header>
 
-  <section class="section">
+  <!-- SOBRE MÍ -->
+  <section id="sobre" class="section">
     <h2>Sobre mí</h2>
     <p>
       Estoy aprendiendo desarrollo web y creando proyectos para mejorar mis habilidades en HTML, CSS y JavaScript.
     </p>
   </section>
 
+  <!-- PROYECTOS -->
   <section id="proyectos" class="section">
     <h2>Proyectos</h2>
 
@@ -37,6 +52,7 @@
     </div>
   </section>
 
+  <!-- CONTACTO -->
   <section id="contacto" class="section">
     <h2>Contacto</h2>
     <p>Email: hectorramon001@gmail.com</p>
@@ -46,6 +62,7 @@
     <p>© 2026 Mi Portafolio</p>
   </footer>
 
-  <script src="script.js"></script>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
