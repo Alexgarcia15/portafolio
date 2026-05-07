@@ -1,12 +1,20 @@
-console.log("Portafolio cargado correctamente 🚀");
+console.log("Portafolio cargado 🚀");
 
-// Animación simple
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    card.style.boxShadow = "0 0 20px #2563eb";
-  });
+// Seleccionamos todas las cards
+const cards = document.querySelectorAll(".card");
 
-  card.addEventListener('mouseleave', () => {
-    card.style.boxShadow = "none";
+// Observer para detectar cuando entran en pantalla
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
   });
+}, {
+  threshold: 0.2
+});
+
+// Activamos el observer en cada card
+cards.forEach(card => {
+  observer.observe(card);
 });

@@ -5,72 +5,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Héctor García | Portafolio</title>
+  <title>Mi Portafolio</title>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Héctor García</h1>
-    <p>Desarrollador de aplicaciones y soluciones reales</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <h2 class="logo">Hector.dev</h2>
+
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+
+    <div class="hero-content">
+
+      <h1>Hector García</h1>
+      <p>Desarrollador Frontend en formación</p>
+
+      <div class="buttons">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+      </div>
+
+    </div>
+
   </header>
 
-  <section class="hero">
-    <h2>Aplicaciones desarrolladas para negocios reales</h2>
+  <!-- SOBRE MI -->
+  <section id="sobre" class="section">
+
+    <h2>Sobre mí</h2>
 
     <p>
-      Desarrollo sistemas para talleres y control de flotas.
+      Soy desarrollador frontend en formación, enfocado en crear interfaces modernas,
+      responsivas y funcionales con HTML, CSS y JavaScript.
     </p>
-  </section>
-
-  <section class="proyectos">
-
-    <h2>Mis Aplicaciones</h2>
-
-    <div class="card">
-
-      <img src="assets/taller.png" class="img-proyecto">
-
-      <h3>Taller Cajebola</h3>
-
-      <p>
-        Sistema de cotización para talleres mecánicos.
-      </p>
-
-      <button>Proyecto funcional</button>
-
-    </div>
-
-    <div class="card">
-
-      <img src="assets/flota.png" class="img-proyecto">
-
-      <h3>ControlRuta2</h3>
-
-      <p>
-        Sistema de gestión y monitoreo de flotas de camiones.
-      </p>
-
-      <button>En desarrollo</button>
-
-    </div>
 
   </section>
 
-  <section class="contacto">
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section">
+
+    <h2>Mis proyectos</h2>
+
+    <div class="projects-grid">
+
+      <!-- PROYECTO 1 -->
+      <div class="card">
+
+        <img src="assets/taller.png" alt="Proyecto Taller">
+
+        <h3>Landing Page</h3>
+        <p>Diseño moderno responsive con HTML y CSS.</p>
+
+        <a href="#" class="project-btn">Ver proyecto</a>
+
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="card">
+
+        <img src="assets/flota.png" alt="Proyecto Flota">
+
+        <h3>To-Do App</h3>
+        <p>Aplicación de tareas usando JavaScript.</p>
+
+        <a href="#" class="project-btn">Ver proyecto</a>
+
+      </div>
+M
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
 
     <h2>Contacto</h2>
 
     <p>Email: hectrramon001@gmail.com</p>
-
+    <p>Teléfono: 929-558-1414</p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Héctor García</p>
+    <p>© Mayo 2026 Mi Portafolio</p>
   </footer>
 
-</body>
+  <script src="js/script.js"></script>
 
+</body>
 </html>
