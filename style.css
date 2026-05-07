@@ -225,3 +225,11 @@ footer {
   color: white;
   margin: 8px 0;
 }
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 60vh;
+    padding: 20px 15px;
+  }
+
+}
